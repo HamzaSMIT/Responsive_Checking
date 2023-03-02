@@ -1,0 +1,979 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "JosefinSansRegular";
+    src: url(./Josefin_Sans/static/JosefinSans-Regular.ttf);
+    font-family: "JosefinSansLight";
+    src: url(./Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+.parent{
+    background: rgba(0, 0, 0, 0.548)url(./Images/bg\ image.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    height:100vh
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.line{
+    border-top: 2px solid #61777F;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+nav{
+    width: 100%;
+    height: 48px;
+    line-height: 45px;  
+    position:absolute;
+    background: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav li{
+    display: inline-block;
+    list-style:none ;
+    position: fixed;
+}
+nav li{
+    font-size: 17px;
+    font-family: "JosefinSansLight";
+    font-weight:900;
+    color: #C8C8C8;
+    position:sticky;
+    padding: 1px 60px;
+    justify-content: space-between;
+    transition: all 0.4s;
+}
+nav li:hover{
+    color: white;
+}
+nav .coloured{
+    color: white;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+.heading h1{
+    font-family: "JosefinSansLight";
+    font-size: 80px;
+    color: white;
+    letter-spacing: 5px;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.para p{
+    display: inline;
+    font-family: "JosefinSansLight";
+    font-size: 20px;
+    color: white;
+}
+.para .dot{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 4px 20px;
+    background-color: #61777F;
+    transform: rotate(45deg);
+}
+.btns{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.btns ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.btns ul li a{
+    border: 2px solid #61777F;
+    background: transparent;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+    font-family:"JosefinSansLight" ;
+    font-weight: 100px;
+    font-size: 15px;
+    transition: all 0.4s;
+    letter-spacing: 1.5px;
+}
+.btns  ul li a:hover{
+    background-color: #61777F ;
+    color: white;
+}
+.menu-down{
+    transform: translateX(+50%) rotate(50deg);
+}
+.scroll-link img{
+    height: 50px;
+    width: 50px;
+}
+.scroll-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+.parent2{
+    width: 100%;
+    height:auto;
+}
+.aboutraw{
+    width: 100%;
+    height: 100vh;
+    background-color:#fff;
+    margin-top: 33px;
+    position: absolute;
+    display: inline-block;
+}
+.image{
+    width: 350px;
+    height: 650px;
+    background-color: #e7e7e7;
+    border-radius: 9px;
+    margin-top: 75px;
+    margin-left: 180px;
+    filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+}
+.image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #61777F;
+    margin-top: 20px;
+    margin-left: 100px;
+    
+}
+.h4{
+    font-family: "JosefinSansLight" ;
+    font-size: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.line2{
+    border-top: 3px solid #61777F;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.mydetails{
+    font-family: "JosefinSansLight" ;
+    font-size: 18px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.mydetails1{
+    font-family: "JosefinSansLight" ;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #61777F;
+    border: 10px;
+}
+.aboutme{
+    margin-left: 80vh;
+    position: absolute;
+    top: 110px;
+}
+.aboutme h1{
+    font-family: "JosefinSansLight" ;
+    font-size: 37px;
+    font-weight: 700;
+}
+.line3{
+        border-top: 3px solid #61777F ;
+        width: 190px;
+        margin-bottom: 20px;
+}
+.aboutme p{
+    font-family: "JosefinSansLight" ;
+    font-size: 17px;
+    font-weight: 700;
+}
+.parent3{ 
+    width: 100%;
+    height:70vh;
+}
+.Portfolioraw{
+    width: 100%;
+    height: 300vh;
+    background-color:rgb(255, 255, 255);
+    margin-top: 833px;
+    position: absolute;
+    display: inline-block;
+}
+.followbar{
+    width: 100%;
+    height: 250px;
+    background-color: #61777F ;
+    filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+    position: relative;
+}
+.followcontent h3{
+    font-family:  "JosefinSansLight";
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.followcontenticons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.followcontenticons a{
+    display: inline-block; 
+    text-decoration: none; 
+    margin: 0 30px;
+}
+.followcontenticons img{
+    width: 50px; 
+    height: 50px; 
+    vertical-align: middle; 
+}
+.followcontenticons img:hover{
+    width: 30px; 
+    height: 30px;
+    animation:reverse;
+    transition: 1000ms;
+}
+.h1port {
+    font-family: "JosefinSansLight" ;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.border3{
+    border-top: 3px solid #61777F;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.h4port{
+    font-family: "JosefinSansLight" ;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.work-web{
+    display: flex;
+    margin: 60px 10px 20px 30px;
+}
+.work-web img{
+    width: 100%;
+    filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+}
+.work-web a{
+    text-decoration: none;
+}
+.work-web p{
+    font-family: "JosefinSansLight";
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #61777F;
+}
+.ownweb1{
+    border: 2px solid #61777F;
+    width: 40%;
+    height: 310px;
+    padding: 30px;
+    margin: 0 10px;
+}
+
+.formui{
+    border: 2px solid #61777F;
+    width: 40%;
+    height: 310px;
+    padding: 30px;
+    margin: 0 10px;
+
+}
+.saylaniform{
+    border: 2px solid #61777F;
+    width: 40%;
+    height: 310px;
+    margin: 0 10px;
+    padding: 30px;
+}
+.appleweb{
+    border: 2px solid #61777F;
+    width: 40%;
+    height: 310px;
+    margin: 0 10px;
+    padding: 30px;  
+}
+.regform{
+    border: 2px solid #61777F;
+    width: 40%;
+    height: 310px;
+    margin: 0 10px;
+    padding: 30px;
+}
+.saylaniweb{
+    border: 2px solid #61777F;
+    width: 40%;
+    height: 310px;
+    margin: 0 10px;
+    padding: 20px;
+}
+.web-work{
+    display: flex;
+    margin: 60px 10px 20px 30px;
+}
+.web-work img{
+    width: 100%;
+    filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+}
+.web-work a{
+    text-decoration: none;
+}
+.web-work p{
+    font-family: "JosefinSansLight";
+    font-weight: 800;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #61777F;
+}
+
+
+.web-work2{
+    display: flex;
+    margin: 60px 10px 20px 30px;
+}
+.web-work2 img{
+    width: 100%;
+    
+    filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+}
+.web-work2 a{
+    text-decoration: none;
+}
+.web-work2 p{
+    font-family: "JosefinSansLight";
+    font-weight: 800;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #61777F;
+}   
+
+
+
+.parent4{
+    width: 100%;
+    height:auto;
+}
+.contactraw{
+    width: 100%;
+    height: 100;
+    background: rgba(0, 0, 0, 0.753)url(./Images/contact.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    margin-top: 2036px;
+    position: absolute;
+    display: inline-block;
+}
+.contacth{
+    font-family: "JosefinSansLight" ;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.line4{
+    border-top: 3px solid #61777F;
+    margin-left: 40em;
+    margin-right: 40em;
+}
+.pcontact{
+    font-family: "JosefinSansLight" ;
+    font-size: 17px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contacth1{
+    font-family: "JosefinSansLight" ;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.form input  {
+    width: 25%;
+    outline: none;
+    line-height: 2;
+    padding: 10px;
+    font-family: "Josefin_SansLight";
+    font-size: 15px;
+    background: transparent;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border-color: #e7e7e769;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e7e7e7;
+}
+::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-family: "JosefinSansLight";
+}
+.form textarea{
+    width: 25%;
+    height: 130px;
+    outline: none;
+    line-height: 2;
+    padding: 10px;
+    font-family: "JosefinSansLight";
+    background: transparent;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border-color: #e7e7e769;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e7e7e7;
+}
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color: #61777F;
+    /* margin-top: 80px; */
+    padding: 10px;
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+    font-family:"JosefinSansLight" ;
+    color: #e7e7e7;
+}
+
+
+
+@media only screen and ( min-width:360px) and (max-width:576px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: "JosefinSansRegular";
+        src: url(./Josefin_Sans/static/JosefinSans-Regular.ttf);
+        font-family: "JosefinSansLight";
+        src: url(./Josefin_Sans/static/JosefinSans-Light.ttf);
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .parent{
+        background: rgba(0, 0, 0, 0.548)url(./Images/bg\ image.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+        width: 100%;
+        height: 100vh
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .logo img{
+        width: 100px;
+        height: 35px;
+    }
+    .line{
+        border-top: 2px solid #61777F;
+    }
+    nav{
+        width: 100%;
+        height: 48px;
+        line-height: 45px;  
+        position:absolute;
+        background: none;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    nav li{
+        display: inline-block;
+        list-style:none ;
+        position: fixed;
+    }
+    nav li{
+        font-size: 10px;
+        font-family: "JosefinSansLight";
+        font-weight:900;
+        color: #C8C8C8;
+        position:sticky;
+        padding: 1px 20px;
+        justify-content: space-between;
+        transition: all 0.4s;
+    }
+    nav li:hover{
+        color: white;
+    }
+    nav .coloured{
+        color: white;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        margin-top: 110px;
+    }
+    .heading h1{
+        font-family: "JosefinSansLight";
+        font-size: 30px;
+        color: white;
+        letter-spacing: 5px;
+    }
+    .para{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .para p{
+        display: inline;
+        font-family: "JosefinSansLight";
+        font-size: 15px;
+        color: white;
+    }
+    .para .dot{
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin: 4px 10px;
+        background-color: #61777F;
+        transform: rotate(45deg);
+    }
+    .btns{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .btns ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0px 20px;
+    }
+    .btns ul li a{
+        border: 2px solid #61777F;
+        background: transparent;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: white;
+        font-family:"JosefinSansLight" ;
+        font-weight: 100px;
+        font-size: 10px;
+        transition: all 0.4s;
+        letter-spacing: 1.5px;
+    }
+    .btns  ul li a:hover{
+        background-color: #61777F ;
+        color: white;
+    }
+    .menu-down{
+        transform: translateX(+50%) rotate(50deg);
+    }
+    .scroll-link img{
+        height: 20px;
+        width: 20px;
+    }
+    .scroll-link{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    /* .parent2{
+        width: 100%;
+        height:auto;
+    }
+    .aboutraw{
+        width: 100%;
+        height: 100vh;
+        background-color:#fff;
+        margin-top: 33px;
+        position: absolute;
+        display: inline-block;
+    }
+    .image{
+        width: 350px;
+        height: 650px;
+        background-color: #e7e7e7;
+        border-radius: 9px;
+        margin-top: 75px;
+        margin-left: 180px;
+        filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+    }
+    .image img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #61777F;
+        margin-top: 20px;
+        margin-left: 100px;
+        
+    }
+    .h4{
+        font-family: "JosefinSansLight" ;
+        font-size: 30px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .line2{
+        border-top: 3px solid #61777F;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .mydetails{
+        font-family: "JosefinSansLight" ;
+        font-size: 18px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .mydetails1{
+        font-family: "JosefinSansLight" ;
+        font-size: 18px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        color: #61777F;
+        border: 10px;
+    }
+    .aboutme{
+        margin-left: 80vh;
+        position: absolute;
+        top: 110px;
+    }
+    .aboutme h1{
+        font-family: "JosefinSansLight" ;
+        font-size: 37px;
+        font-weight: 700;
+    }
+    .line3{
+            border-top: 3px solid #61777F ;
+            width: 190px;
+            margin-bottom: 20px;
+    }
+    .aboutme p{
+        font-family: "JosefinSansLight" ;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .parent3{ 
+        width: 100%;
+        height:70vh;
+    }
+    .Portfolioraw{
+        width: 100%;
+        height: 300vh;
+        background-color:rgb(255, 255, 255);
+        margin-top: 833px;
+        position: absolute;
+        display: inline-block;
+    }
+    .followbar{
+        width: 100%;
+        height: 250px;
+        background-color: #61777F ;
+        filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+        position: relative;
+    }
+    .followcontent h3{
+        font-family:  "JosefinSansLight";
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    .followcontenticons{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .followcontenticons a{
+        display: inline-block; 
+        text-decoration: none; 
+        margin: 0 30px;
+    }
+    .followcontenticons img{
+        width: 50px; 
+        height: 50px; 
+        vertical-align: middle; 
+    }
+    .followcontenticons img:hover{
+        width: 30px; 
+        height: 30px;
+        animation:reverse;
+        transition: 1000ms;
+    }
+    .h1port {
+        font-family: "JosefinSansLight" ;
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .border3{
+        border-top: 3px solid #61777F;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    .h4port{
+        font-family: "JosefinSansLight" ;
+        font-size: 20px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .work-web{
+        display: flex;
+        margin: 60px 10px 20px 30px;
+    }
+    .work-web img{
+        width: 100%;
+        filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+    }
+    .work-web a{
+        text-decoration: none;
+    }
+    .work-web p{
+        font-family: "JosefinSansLight";
+        font-weight: 600;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        color: #61777F;
+    }
+    .ownweb1{
+        border: 2px solid #61777F;
+        width: 40%;
+        height: 310px;
+        padding: 30px;
+        margin: 0 10px;
+    }
+    
+    .formui{
+        border: 2px solid #61777F;
+        width: 40%;
+        height: 310px;
+        padding: 30px;
+        margin: 0 10px;
+    
+    }
+    .saylaniform{
+        border: 2px solid #61777F;
+        width: 40%;
+        height: 310px;
+        margin: 0 10px;
+        padding: 30px;
+    }
+    .appleweb{
+        border: 2px solid #61777F;
+        width: 40%;
+        height: 310px;
+        margin: 0 10px;
+        padding: 30px;  
+    }
+    .regform{
+        border: 2px solid #61777F;
+        width: 40%;
+        height: 310px;
+        margin: 0 10px;
+        padding: 30px;
+    }
+    .saylaniweb{
+        border: 2px solid #61777F;
+        width: 40%;
+        height: 310px;
+        margin: 0 10px;
+        padding: 20px;
+    }
+    .web-work{
+        display: flex;
+        margin: 60px 10px 20px 30px;
+    }
+    .web-work img{
+        width: 100%;
+        filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+    }
+    .web-work a{
+        text-decoration: none;
+    }
+    .web-work p{
+        font-family: "JosefinSansLight";
+        font-weight: 800;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        color: #61777F;
+    }
+    
+    
+    .web-work2{
+        display: flex;
+        margin: 60px 10px 20px 30px;
+    }
+    .web-work2 img{
+        width: 100%;
+        
+        filter: drop-shadow(-2px +2px 6px rgba(0, 0, 0, 0.61) );
+    }
+    .web-work2 a{
+        text-decoration: none;
+    }
+    .web-work2 p{
+        font-family: "JosefinSansLight";
+        font-weight: 800;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        color: #61777F;
+    }   
+    
+    
+    
+    .parent4{
+        width: 100%;
+        height:auto;
+    }
+    .contactraw{
+        width: 100%;
+        height: 100;
+        background: rgba(0, 0, 0, 0.753)url(./Images/contact.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+        margin-top: 2036px;
+        position: absolute;
+        display: inline-block;
+    }
+    .contacth{
+        font-family: "JosefinSansLight" ;
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .line4{
+        border-top: 3px solid #61777F;
+        margin-left: 40em;
+        margin-right: 40em;
+    }
+    .pcontact{
+        font-family: "JosefinSansLight" ;
+        font-size: 17px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .contacth1{
+        font-family: "JosefinSansLight" ;
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .form input  {
+        width: 25%;
+        outline: none;
+        line-height: 2;
+        padding: 10px;
+        font-family: "Josefin_SansLight";
+        font-size: 15px;
+        background: transparent;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border-color: #e7e7e769;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #e7e7e7;
+    }
+    ::-webkit-input-placeholder{
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        font-family: "JosefinSansLight";
+    }
+    .form textarea{
+        width: 25%;
+        height: 130px;
+        outline: none;
+        line-height: 2;
+        padding: 10px;
+        font-family: "JosefinSansLight";
+        background: transparent;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border-color: #e7e7e769;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #e7e7e7;
+    }
+    .footer{
+        width: 100%;
+        height: 30px;
+        background-color: #61777F;
+        /* margin-top: 80px; */
+        padding: 10px;
+    }
+    .footer p{
+        display: flex;
+        justify-content: center;
+        font-family:"JosefinSansLight" ;
+        color: #e7e7e7;
+    } */
+
+}
